@@ -38,7 +38,7 @@ Containerization_101-Docker-Labs/
 ├── web/            # Web / Backend Docker labs
 ├── ml/             # Machine Learning Docker labs
 ├── cyber/          # Cyber / Security Docker labs
-└── compose-labs/   # Multi-container systems (Advanced / Day 2)
+└── compose-labs/   # Multi-container systems (Advanced)
 ```
 
 👉 You **do not** need to work on everything.
