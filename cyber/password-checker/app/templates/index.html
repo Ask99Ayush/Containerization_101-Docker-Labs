@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS Cloud Club KIET | Password Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>AWS Cloud Club – KIET</h1>
+    <p class="subtitle">Containerization 101 · Cyber Security App</p>
+
+    <form method="POST">
+      <input type="password" name="password" placeholder="Enter password" required>
+      <button type="submit">Check Strength</button>
+    </form>
+
+    {% if strength %}
+      <div class="result">
+        Password Strength: <strong>{{ strength }}</strong>
+      </div>
+    {% endif %}
+
+    <footer>
+      <p>Build Once. Run Anywhere.</p>
+    </footer>
+  </div>
+</body>
+</html>
