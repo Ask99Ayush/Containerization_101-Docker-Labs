@@ -1,0 +1,41 @@
+# python cache
+__pycache__/
+*.pyc
+
+# venv
+venv/
+.venv/
+env/
+**/venv/
+**/.venv/
+
+# env files
+.env
+*.env
+
+# logs
+*.log
+
+# vscode
+.vscode/
+
+# os files
+.DS_Store
+Thumbs.db
+
+# pytest
+.pytest_cache/
+
+# coverage
+.coverage
+
+# build
+build/
+dist/
+*.egg-info/
+
+# jupyter
+.ipynb_checkpoints/
+
+# node
+node_modules/

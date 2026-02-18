@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS Cloud Club KIET | ML Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>AWS Cloud Club – KIET</h1>
+    <p class="subtitle">Containerization 101 · ML Prediction App</p>
+
+    <form method="POST">
+      <input type="number" name="value" placeholder="Enter a number" required>
+      <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+      <div class="result">
+        Prediction Result: <strong>{{ prediction }}</strong>
+      </div>
+    {% endif %}
+
+    <footer>
+      <p>Build Once. Run Anywhere.</p>
+    </footer>
+  </div>
+</body>
+</html>

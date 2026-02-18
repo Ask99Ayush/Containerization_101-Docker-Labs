@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AWS Cloud Club KIET | HealthCheck</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AWS Cloud Club – KIET</h1>
+      <p class="subtitle">Containerization 101 · Docker Web App</p>
+    </header>
+
+    <section class="card">
+      <h2>Service Health Status</h2>
+      <p id="status">Click the button to check service health.</p>
+
+      <button onclick="checkHealth()">Check Health</button>
+    </section>
+
+    <footer>
+      <p>Build Once. Run Anywhere.</p>
+    </footer>
+  </div>
+
+  <script>
+    function checkHealth() {
+      fetch("/health")
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById("status").innerText =
+            "Status: " + data.status + " | Service: " + data.service;
+        })
+        .catch(() => {
+          document.getElementById("status").innerText =
+            "Error: Service not reachable";
+        });
+    }
+  </script>
+</body>
+</html>
