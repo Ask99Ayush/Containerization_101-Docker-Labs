@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Employee | AWS Cloud Club KIET</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>AWS Cloud Club – KIET</h1>
+    <p class="subtitle">Add New Employee</p>
+  </header>
+
+  <section class="card">
+    <form method="POST">
+      <input type="text" name="name" placeholder="Employee Name" required>
+      <input type="text" name="role" placeholder="Role / Department" required>
+      <button type="submit">Save</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Containerization 101</p>
+  </footer>
+</div>
+
+</body>
+</html>
