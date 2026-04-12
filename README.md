@@ -1,228 +1,352 @@
-# 🐳 Containerization 101 – Docker Labs
+# Containerization 101 – Docker Hands-On Bootcamp Projects
 
-**One repository. Multiple domains. Real Docker practice.**
-
-> **Containerization_101-Docker-Labs** is a hands-on Docker learning repository designed for students from **Web Development, Machine Learning, and Cyber/Security** domains.
->
-> This repo focuses on **learning Docker by practice**, not by heavy theory or large applications.
+## One repository. Multiple domains. Practical Docker learning.
 
 ---
 
-## 🎯 Why This Repository Exists
+## Table of Contents
 
-Most students struggle with Docker because they:
+* [Overview](#overview)
+* [Objectives](#objectives)
+* [Why This Repository Exists](#why-this-repository-exists)
+* [Repository Structure](#repository-structure)
+* [Domain-Based Learning Paths](#domain-based-learning-paths)
 
-* Memorize commands ❌
-* Copy-paste tutorials ❌
-* Never understand *why* Docker is used ❌
-
-This repository fixes that.
-
-> **Here, you learn Docker by building images, running containers, breaking things, and fixing them.**
-
-Each folder contains a **small, domain-related project** whose main goal is to help you:
-
-* Write Dockerfiles
-* Build Docker images
-* Run containers
-* Understand Docker’s role in real projects
+  * [Web Development](#web-development)
+  * [Machine Learning](#machine-learning)
+  * [Cyber Security](#cyber-security)
+  * [Multi-Container Systems](#multi-container-systems)
+* [Project Design Philosophy](#project-design-philosophy)
+* [Getting Started](#getting-started)
+* [Prerequisites](#prerequisites)
+* [Docker Workflow Explained](#docker-workflow-explained)
+* [Hands-On Learning Approach](#hands-on-learning-approach)
+* [Bootcamp Structure](#bootcamp-structure)
+* [Best Practices Followed](#best-practices-followed)
+* [Common Mistakes and How to Avoid Them](#common-mistakes-and-how-to-avoid-them)
+* [Expected Learning Outcomes](#expected-learning-outcomes)
+* [Future Enhancements](#future-enhancements)
 
 ---
 
-## 🧠 Repository Structure (High-Level)
+## Overview
 
-This is **ONE repository** with **MULTIPLE small Docker labs**, grouped by domain.
+This repository is a structured, hands-on learning resource developed as part of the **Containerization 101 Docker Hands-On Bootcamp**.
+
+It is designed to help students understand Docker through practical implementation rather than theoretical concepts.
+
+The repository contains multiple small, focused projects across different domains including Web Development, Machine Learning, and Cyber Security. Each project is intentionally kept simple so that the focus remains on containerization concepts rather than application complexity.
+
+---
+
+## Objectives
+
+The primary objectives of this repository are:
+
+* To introduce Docker fundamentals through real use cases
+* To enable students to build and run containerized applications
+* To demonstrate how Docker works across multiple domains
+* To provide a structured environment for experimentation and debugging
+* To prepare students for real-world development and deployment workflows
+
+---
+
+## Why This Repository Exists
+
+Many learners struggle with Docker because they rely on passive learning methods such as:
+
+* Memorizing commands without understanding
+* Following tutorials without experimentation
+* Avoiding debugging scenarios
+
+This repository addresses those gaps by emphasizing active learning.
+
+Each project is designed to:
+
+* Encourage exploration
+* Introduce controlled failure scenarios
+* Reinforce understanding through iteration
+
+The goal is not just to run containers, but to understand how and why they work.
+
+---
+
+## Repository Structure
+
+The repository is organized into domain-specific directories:
 
 ```
-Containerization_101-Docker-Labs/
-├── web/            # Web / Backend Docker labs
-├── ml/             # Machine Learning Docker labs
-├── cyber/          # Cyber / Security Docker labs
-└── compose-labs/   # Multi-container systems (Advanced)
+containerization-101-docker-hands-on-bootcamp-projects/
+├── web/
+├── ml/
+├── cyber/
+└── compose-labs/
 ```
 
-👉 You **do not** need to work on everything.
-👉 Choose the folder related to **your domain**.
+Each directory represents a different application domain and contains multiple independent projects.
 
 ---
 
-## 🧑‍💻 Choose Your Domain
+## Domain-Based Learning Paths
 
-### 🟦 Web Development
+### Web Development
 
-Go to:
+Location:
 
 ```
 web/
 ```
 
-You will practice:
+Focus areas:
 
-* Backend containerization
-* Port mapping
-* Running web services inside Docker
+* Backend service containerization
+* Port exposure and mapping
+* Running APIs inside containers
+* Debugging runtime issues
+
+Typical technologies:
+
+* Python Flask / Node.js
+* REST APIs
+* Lightweight web services
 
 ---
 
-### 🟩 Machine Learning
+### Machine Learning
 
-Go to:
+Location:
 
 ```
 ml/
 ```
 
-You will practice:
+Focus areas:
 
-* Reproducible ML environments
+* Reproducible environments
 * Dependency management
-* Running ML scripts and APIs in containers
+* Running ML scripts inside containers
+* Model execution consistency
+
+Typical components:
+
+* Python scripts
+* Requirements management
+* Lightweight inference pipelines
 
 ---
 
-### 🟥 Cyber / Security
+### Cyber Security
 
-Go to:
+Location:
 
 ```
 cyber/
 ```
 
-You will practice:
+Focus areas:
 
-* Running security-related tools safely
-* Isolated execution using containers
-* Packaging utilities with Docker
-
+* Safe execution of security tools
+* Isolation using containers
+* Packaging command-line utilities
+* Controlled testing environments
 
 ---
 
-### 🧩 Multi-Container Systems (Advanced)
+### Multi-Container Systems
 
-Go to:
+Location:
 
 ```
 compose-labs/
 ```
 
-You will practice:
+Focus areas:
 
-* Running multiple containers together
 * Docker Compose
-* Real-world system architecture
-* Team-based workflows
+* Multi-service architecture
+* Inter-container communication
+* Real-world deployment simulation
 
 ---
 
-## 📁 How Each Project Folder Is Designed
+## Project Design Philosophy
 
-Every project folder follows the **same simple pattern**:
+Each project follows a consistent structure:
 
 ```
 project-name/
 ├── Dockerfile
 ├── README.md
-├── code files (app.py / model.py / index.html etc.)
-└── requirements.txt (if needed)
+├── application code
+└── dependency files
 ```
 
-This ensures:
+Design principles:
 
-* Each lab is independent
-* Easy debugging & retry
-* Focus stays on Docker, not app complexity
+* Minimal application complexity
+* Maximum Docker exposure
+* Independent execution
+* Easy reproducibility
 
 ---
 
-## 🧪 How to Use This Repository (Student Guide)
+## Getting Started
 
-### Step 1️⃣ Clone the repository
+### Step 1: Clone the repository
 
-```bash
-git clone https://github.com/Ask99Ayush/Containerization_101-Docker-Labs.git
-cd Containerization_101-Docker-Labs
+```
+git clone https://github.com/Ask99Ayush/Containerization_101-Docker-Hands-On-Bootcamp-Projects.git
+cd Containerization_101-Docker-Hands-On-Bootcamp-Projects
 ```
 
-### Step 2️⃣ Navigate to your domain folder
+### Step 2: Navigate to a project
 
-Example:
-
-```bash
-cd web/healthcheck-api
+```
+cd web/sample-project
 ```
 
-### Step 3️⃣ Follow the project README
+### Step 3: Build the Docker image
 
-Each project has its **own README.md** with:
+```
+docker build -t project-name .
+```
 
-* What the project does
-* Why it exists
-* Docker commands to try
-* Suggested experiments
+### Step 4: Run the container
 
-👉 **Always follow the README inside the project folder.**
+```
+docker run -p 5000:5000 project-name
+```
 
 ---
 
-## 🛠 Prerequisites
+## Prerequisites
 
-You need:
+Ensure the following are installed:
 
-* A laptop 💻
-* Docker Desktop installed 🐳
-* Basic understanding of your domain
+* Docker Desktop
+* Git
+* Basic familiarity with command line
+* Fundamental knowledge of your chosen domain
 
-> ❗ No prior Docker knowledge is required.
+No prior Docker experience is required.
 
 ---
 
-## 📚 Learning Philosophy
+## Docker Workflow Explained
 
-This repository follows the:
+The standard workflow followed in this repository:
 
-> **Learn → Break → Fix → Understand** approach
+1. Write a Dockerfile
+2. Build an image using the Dockerfile
+3. Run a container from the image
+4. Test the application
+5. Debug and optimize
 
-You are encouraged to:
+This cycle is repeated across all projects to reinforce understanding.
+
+---
+
+## Hands-On Learning Approach
+
+This repository follows a practical learning model:
+
+* Build first, understand later
+* Encourage experimentation
+* Introduce errors intentionally
+* Learn through debugging
+
+Users are expected to:
 
 * Modify Dockerfiles
-* Change ports
-* Remove or add dependencies
-* Read Docker error messages carefully
-
-> **If you break something and fix it, you are learning correctly.**
+* Change configurations
+* Observe failures
+* Fix issues independently
 
 ---
 
-## 🚀 How This Repo Is Used in Containerization 101 Bootcamp
+## Bootcamp Structure
 
 ### Day 1
 
-* Students choose **one domain**
-* Build **one Docker image**
-* Run **one container**
-* Understand Docker basics
+* Introduction to Docker
+* Building first image
+* Running containers
+* Understanding Dockerfile basics
 
 ### Day 2
 
-* Students move to `compose-labs/`
-* Run **multi-container systems**
-* Learn real-world Docker workflows
-* Work collaboratively in teams
+* Working with Docker Compose
+* Multi-container applications
+* Team-based problem solving
+* Real-world workflow simulation
 
 ---
 
-## 🏁 Final Note
+## Best Practices Followed
 
-This is **not a showcase repository**.
-This is a **practice lab**.
-
-If something breaks — good.
-If you understand *why* it broke — even better.
+* Use of lightweight base images
+* Clear separation of concerns
+* Minimal and readable Dockerfiles
+* Consistent folder structure
+* Environment reproducibility
 
 ---
 
-### 🐳 Containerization 101
+## Common Mistakes and How to Avoid Them
 
-**Build Once. Run Anywhere.**
+1. Building unnecessarily large images
+
+   * Use minimal base images
+
+2. Hardcoding configurations
+
+   * Use environment variables
+
+3. Ignoring logs
+
+   * Always inspect container logs
+
+4. Not understanding port mapping
+
+   * Clearly define exposed ports
+
+5. Copying entire directories blindly
+
+   * Use .dockerignore effectively
+
+---
+
+## Expected Learning Outcomes
+
+After completing this repository, users should be able to:
+
+* Write Dockerfiles confidently
+* Build and run Docker images
+* Understand container lifecycle
+* Debug container-related issues
+* Work with multi-container setups
+* Apply Docker concepts in real projects
+
+---
+
+## Future Enhancements
+
+Planned improvements include:
+
+* Integration with cloud platforms
+* CI/CD pipeline examples
+* Kubernetes introduction
+* Advanced networking scenarios
+* Security best practices in containers
+
+---
+
+## Final Note
+
+This repository is not intended to showcase complex applications.
+Its purpose is to build strong foundational understanding through practice.
+
+If something fails, investigate it.
+If you fix it, you have learned something valuable.
 
 ---
